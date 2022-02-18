@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Employee_Details_Activity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Details"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empname"
+        android:layout_marginTop="30dp"
+        android:hint="Employee Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/employeeDepartment"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/salary"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Salary"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginLeft="150dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"/>
+        </RadioGroup>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:id="@+id/savedetails"
+        android:text="Save"
+        android:layout_marginTop="40dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+</LinearLayout>
